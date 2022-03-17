@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fast Parcel | {% block title %}{% endblock title %}</title>
+
+    {# Load the tag library #}
+    {% load django_bootstrap5 %}
+
+    {# Load CSS and JavaScript #}
+    {% bootstrap_css %}
+    {% bootstrap_javascript %}
+</head>
+<body>
+    <header id="header">
+        {% block header %}{% endblock header %}
+    </header>
+    <main id="main" class="container">
+        {% block content %}{% endblock content%}
+    </main>
+    <footer id="footer">
+        <p class="my-5 text-center">&copy Dennis Labs 2022</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+
+{% block title %}
+Home
+{% endblock title %}
+
+
+{% block header %}
+  {% include "partials/nav.html" %}
+{% endblock header %}
+
+{% block content %}
+<div class="row">
+  <div class="col-lg-12">
+    <h1 class="my-5 text-center">Welcome to Fast Parcel</h1>
+  </div>
+  <div class="col-lg-6">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Customer</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <a href="/customer/" class="btn btn-warning">Details</a>
+      </div>
+    </div>
+
+  </div>
+  <div class="col-lg-6">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Courier</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <a href="/courier/" class="btn btn-warning">Details</a>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock content %}
